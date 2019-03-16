@@ -10,3 +10,20 @@ html{
   border: solid black 1px;
 }
   
+
+
+.btnC{
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 30px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #e60028;
+  border: solid black 2px;
+}
+
+.btnC:hover{
+  cursor: pointer;
+  color: black;
+  background: #e60028;
+}
