@@ -13,11 +13,12 @@ html{
 
 
 .btnC{
+  margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   height: 30px;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   color: #e60028;
   border: solid black 2px;
 }

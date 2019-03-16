@@ -64,6 +64,7 @@ export default class App extends Component {
       <div style={{ height: 700, textAlign: "center" }}>
         <div>
         </div>
+        <h3>Bringing people toghether</h3>
         <div style={{
           display: 'flex',
           width: "75%",
@@ -78,10 +79,11 @@ export default class App extends Component {
         </div>
         <div>
 
-          <button className="btnC" onClick={this.setGermany}>Germany</button>
-          <button className="btnC" onClick={this.setDefault}>UK</button>
           <button className="btnC" onClick={this.setFrance}>France</button>
+          <button className="btnC" onClick={this.setGermany}>Deutschland</button>
+          <button className="btnC" onClick={this.setDefault}>UK</button>
           <button className="btnC" onClick={this.setChina}>中文</button>
+          <button className="btnC" onClick={this.setChina}>España</button>
 
         </div>
 
