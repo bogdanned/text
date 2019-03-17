@@ -53,7 +53,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div style={{ height: 700, textAlign: "center" }}>
+      <div style={{ height: 600, textAlign: "center" }}>
         <div>
         </div>
         <div style={{
@@ -84,8 +84,6 @@ export default class App extends Component {
           theme={FileExplorerTheme}
         />
 
-
-        <button>Create Process</button>
       </div>
     );
   }

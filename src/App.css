@@ -12,6 +12,22 @@ html{
 }
   
 
+.success{
+  text-transform: uppercase;
+  color: #e60028;
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+  margin: 5px;
+  font-weight: 600;
+  background: black;
+  border: solid black 1px;
+}
+  
+.success:hover{
+  background: white
+}
 
 .btnC{
   margin-top: 10px;

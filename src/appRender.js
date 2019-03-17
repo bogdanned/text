@@ -7,12 +7,15 @@ import renderFrench from "./languages/renderFrance"
 
 import CameraInput from "./cameraInput"
 
+import RealApp from "./realApp"
+
 export default (props) => {
 
-    const { locale } = props
+    const { locale, showApp } = props
+
     let text, component, title = "Trust Diligence"
     console.log(props, "props")
-    if (locale == "french") {
+    if (locale == "french"){
         title = "Confiance diligence"
     } else if(locale == "chinese"){
         title = "信任勤奋"
@@ -36,8 +39,14 @@ export default (props) => {
             element
         )
     })
-    return (
 
+    if(
+    showApp){
+        return (                    <RealApp/>        )
+    }
+
+    return (
+        
         <div style={{
             margin: "50px",
             padding: "30px",
@@ -46,6 +55,7 @@ export default (props) => {
             height: "500px",
             width: "250px"
         }}>
+
             <h3>{title} </h3>
             <div>
                 {data}

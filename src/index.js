@@ -9,53 +9,65 @@ import CameraInput from "./cameraInput"
 
 export default class App extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props)
         this.state = {
             locale: "france",
-            builderData: treeData 
+            showApp: false,
+            builderData: treeData
         }
-        this.setBuilderData =  this.setBuilderData.bind(this)
+        this.setBuilderData = this.setBuilderData.bind(this)
         this.setLocale = this.setLocale.bind(this)
+        this.switch = this.switch.bind(this)
     }
 
 
-    setLocale(input){
+    setLocale(input) {
         this.setState({
             locale: input
         })
     }
 
-    setBuilderData(input){
+    setBuilderData(input) {
         this.setState({
             builderData: input
         })
     }
 
+    switch() {
+        this.setState({
+            showApp: true
+        })
+    }
 
-    render(){
+
+    render() {
 
 
         return (
             <div>
                 <div style={{ display: "flex" }}>
                     <div style={{ width: "60%" }}>
-                        <Builder 
-                            builderData={this.state.builderData} 
+                        <Builder
+                            builderData={this.state.builderData}
                             setBuilderData={this.setBuilderData}
-                            setLocale={this.setLocale} 
-                            locale={this.state.locale}/>
+                            setLocale={this.setLocale}
+                            locale={this.state.locale} />
                     </div>
                     <div style={{ width: "40%" }}>
-                        <AppRender setLocale={this.setLocale} builderData={this.state.builderData} locale={this.state.locale}/>
+                        <AppRender
+                            setLocale={this.setLocale}
+                            showApp={this.state.showApp}
+                            builderData={this.state.builderData}
+                            locale={this.state.locale} />
                     </div>
-    
+
                     <div>
-    
-    
+
+
                     </div>
                 </div>
-    
+
                 <div style={{
                     display: 'flex',
                     width: "75%",
@@ -73,9 +85,9 @@ export default class App extends Component {
                     <img src="./logo_good.png" style={{ height: 70 }} />
                     <img src="./logo_good.png" style={{ height: 70 }} />
                     <img src="./logo_good.png" style={{ height: 70 }} />
-    
+
                 </div>
-    
+
                 <div style={{
                     display: 'flex',
                     width: "75%",
@@ -86,9 +98,9 @@ export default class App extends Component {
                     <img src="./logo_good.png" style={{ height: 70 }} />
                     <h1>--- Da Crazy Dino Factory ---</h1>
                     <img src="./logo_good.png" style={{ height: 70 }} />
-    
+
                 </div>
-    
+
                 <div style={{
                     display: 'flex',
                     width: "75%",
@@ -106,11 +118,15 @@ export default class App extends Component {
                     <img src="./logo_good.png" style={{ height: 70 }} />
                     <img src="./logo_good.png" style={{ height: 70 }} />
                     <img src="./logo_good.png" style={{ height: 70 }} />
-    
+
                 </div>
+                <button 
+                className="success"
+                onClick={this.switch}>DEFRAG THE DINOS(PUBLISH)</button>
+
             </div>
-    
-    
+
+
         )
     }
 }
