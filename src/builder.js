@@ -63,10 +63,9 @@ export default class App extends Component {
           justifyContent: "space-between",
           alignItems: "center"
         }}>
-          <img src="./logo_good.png" style={{ height: 70 }} />
-          <h2>Bringing people toghether</h2>
+          <img src="./logo_good.png" style={{ height: 80 }} />
+          <h1>Bringing people toghether</h1>
 
-          <img src="./logo_good.png" style={{ height: 70 }} />
         </div>
         <img src="./logo_sg.png" style={{ height: 70 }} />
 
