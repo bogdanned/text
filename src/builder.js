@@ -26,6 +26,7 @@ export default class App extends Component {
 
   setGermany(e) {
     e.preventDefault()
+    this.props.setLocale("")
     this.setState({
       treeData: treeDataGermany,
       other_modules: []
@@ -43,6 +44,7 @@ export default class App extends Component {
 
   setFrance(e) {
     e.preventDefault()
+    this.props.setLocale("french")
     console.log("asdfd")
     this.setState({
       treeData: treeDataFrance,
@@ -53,6 +55,7 @@ export default class App extends Component {
 
   setDefault(e) {
     e.preventDefault()
+    this.props.setLocale("english")
     this.setState({
       treeData: treeData,
       other_modules: []
