@@ -13,6 +13,7 @@ html{
   
 
 .success{
+  height: 74px;
   text-transform: uppercase;
   color: #e60028;
   font-size: 30px;
