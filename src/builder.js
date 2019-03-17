@@ -64,10 +64,12 @@ export default class App extends Component {
           alignItems: "center"
         }}>
           <img src="./logo_good.png" style={{ height: 70 }} />
-          <h3>Bringing people toghether</h3>
+          <h2>Bringing people toghether</h2>
 
           <img src="./logo_good.png" style={{ height: 70 }} />
         </div>
+        <img src="./logo_sg.png" style={{ height: 70 }} />
+
         <div>
 
           <button className="btnC" onClick={this.setFrance}>France</button>

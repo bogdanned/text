@@ -35,6 +35,7 @@ export default class App extends Component {
     }
 
     switch() {
+        
         this.setState({
             showApp: true
         })
@@ -42,6 +43,7 @@ export default class App extends Component {
 
 
     render() {
+        console.log(this.state, "this state")
 
 
         return (
@@ -68,58 +70,6 @@ export default class App extends Component {
                     </div>
                 </div>
 
-                <div style={{
-                    display: 'flex',
-                    width: "75%",
-                    paddingLeft: "45px",
-                    justifyContent: "space-between",
-                    alignItems: "center"
-                }}>
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-
-                </div>
-
-                <div style={{
-                    display: 'flex',
-                    width: "75%",
-                    paddingLeft: "45px",
-                    justifyContent: "space-between",
-                    alignItems: "center"
-                }}>
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <h1>--- Da Crazy Dino Factory ---</h1>
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-
-                </div>
-
-                <div style={{
-                    display: 'flex',
-                    width: "75%",
-                    paddingLeft: "45px",
-                    justifyContent: "space-between",
-                    alignItems: "center"
-                }}>
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-                    <img src="./logo_good.png" style={{ height: 70 }} />
-
-                </div>
                 <button 
                 className="success"
                 onClick={this.switch}>DEFRAG THE DINOS(PUBLISH)</button>
