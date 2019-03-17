@@ -27,39 +27,27 @@ export default class App extends Component {
   setGermany(e) {
     e.preventDefault()
     this.props.setLocale("")
-    this.setState({
-      treeData: treeDataGermany,
-      other_modules: []
-    })
+    this.props.setBuilderData(treeDataGermany)
   }
 
   setChina(e) {
     e.preventDefault()
-    this.setState({
-      treeData: treeDataChina,
-      other_modules: []
-    })
+    this.props.setBuilderData(treeDataChina)
+
   }
 
 
   setFrance(e) {
     e.preventDefault()
     this.props.setLocale("french")
-    console.log("asdfd")
-    this.setState({
-      treeData: treeDataFrance,
-      other_modules: []
-    })
+    this.props.setBuilderData(treeDataFrance)
   }
 
 
   setDefault(e) {
     e.preventDefault()
     this.props.setLocale("english")
-    this.setState({
-      treeData: treeData,
-      other_modules: []
-    })
+    this.props.setBuilderData(treeData)
   }
 
   render() {
@@ -67,7 +55,6 @@ export default class App extends Component {
       <div style={{ height: 700, textAlign: "center" }}>
         <div>
         </div>
-        <h3>Bringing people toghether</h3>
         <div style={{
           display: 'flex',
           width: "75%",
@@ -75,10 +62,10 @@ export default class App extends Component {
           justifyContent: "space-between",
           alignItems: "center"
         }}>
-          <img src="./logo2.png" style={{ height: 70 }} />
-          <h3>Da Crazy Dino Factory</h3>
+          <img src="./logo_good.png" style={{ height: 70 }} />
+          <h3>Bringing people toghether</h3>
 
-          <img src="./logo2.png" style={{ height: 70 }} />
+          <img src="./logo_good.png" style={{ height: 70 }} />
         </div>
         <div>
 
@@ -91,8 +78,8 @@ export default class App extends Component {
         </div>
 
         <SortableTree
-          treeData={this.state.treeData}
-          onChange={treeData => this.setState({ treeData })}
+          treeData={this.props.builderData}
+          onChange={treeData => this.props.setBuilderData(treeData)}
           theme={FileExplorerTheme}
         />
 

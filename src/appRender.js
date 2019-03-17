@@ -5,6 +5,7 @@ import { Twemoji } from 'react-emoji-render';
 
 import renderFrench from "./languages/renderFrance"
 
+
 export default (props) => {
 
     const { locale } = props
@@ -15,6 +16,8 @@ export default (props) => {
     } else {
         text = "English: "
     }
+
+    const data = props.builderData.map((node, index) => (<h6>{index + 1}. {node.title}</h6>))
     return (
 
         <div style={{
@@ -25,19 +28,9 @@ export default (props) => {
             height: "500px",
             width: "250px"
         }}>
-            <h1>Awesome app here </h1>
+            <h1>Trust Diligence </h1>
             <div>
-
-                <label style={{ fontSize: "20px;" }}>{text}
-
-                </label>
-
-                <input style={
-                    {
-                        border: "none",
-                        borderBottom: "solid black 2px"
-                    }
-                }></input>?                <Twemoji text=":)" />
+                {data}
             </div>
         </div>
 
