@@ -18,7 +18,7 @@ export default class DemoCarousel extends Component {
     render() {
         const { step } = this.state;
         return (
-            <iframe src="https://prottapp.com/e/9c520e" width="432" height="980" frameborder="0"></iframe>
+<iframe src="https://prottapp.com/e/5e9624" width="431" height="936" frameborder="0"></iframe>
         )
     }
 }

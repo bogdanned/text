@@ -70,7 +70,10 @@ export default class App extends Component {
         </div>
         <img src="./logo_sg.png" style={{ height: 70 }} />
 
-        <div>
+        <div style={{
+              textAlign: "left",
+              paddingLeft: "40px"
+        }}>
 
           <button className="btnC" onClick={this.setFrance}>France</button>
           <button className="btnC" onClick={this.setGermany}>Deutschland</button>
