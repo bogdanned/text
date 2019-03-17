@@ -28,13 +28,13 @@ export default (props) => {
         if(node.id=="parse-id"){
             return (
                 <div>
-                    <h6>{index + 1}. {node.title}</h6>
+                    <h6 style={{textTransform: "uppercase"}}>{index + 1}. {node.title}</h6>
                     <CameraInput/>
                     </div>
             )
         }
 
-        const element = <h6>{index + 1}. {node.title}</h6>
+        const element = <h6 style={{textTransform: "uppercase"}}>{index + 1}. {node.title}</h6>
         return (
             element
         )

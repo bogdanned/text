@@ -1,18 +1,15 @@
 export default [
     { title: "Scan and Parse ID", id: "parse-id" },
     {
-        title: "Check if customer exists in central DB",
+        title: "Check if customer already has KYC",
         id: "central-db-check",
         children: [
             {
                 title: "Check for changes in new data if customer already exists"
             },
             {
-                title: "Check 2"
+                title: "Blacklist update"
             },
-            {
-                title: "Check 3"
-            }
         ]
     },
     { title: "Check if customer on blacklist", id: "blacklist-check" },
