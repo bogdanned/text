@@ -26,12 +26,13 @@ export default class App extends Component {
 
   setGermany(e) {
     e.preventDefault()
-    this.props.setLocale("")
+    this.props.setLocale("german")
     this.props.setBuilderData(treeDataGermany)
   }
 
   setChina(e) {
     e.preventDefault()
+    this.props.setLocale("chinese")
     this.props.setBuilderData(treeDataChina)
 
   }

@@ -1,22 +1,8 @@
-import React, { Component } from 'react';
-import Camera from 'react-html5-camera-photo';
-import 'react-html5-camera-photo/build/css/index.css';
- 
-class App extends Component {
-  onTakePhoto (dataUri) {
-    // Do stuff with the dataUri photo...
-    console.log('takePhoto');
-  }
- 
-  render () {
-    return (
-      <div className="App">
-        <Camera
-          onTakePhoto = { (dataUri) => { this.onTakePhoto(dataUri); } }
-        />
-      </div>
-    );
+import React from "react";
+import Webcam from "react-webcam";
+
+export default class Component extends React.Component {
+  render() {
+  return <Webcam style={{width: "100%",height: "129px"}}/>;
   }
 }
- 
-export default App;

@@ -38,7 +38,6 @@ export default class App extends Component {
 
         return (
             <div>
-                <CameraInput/>
                 <div style={{ display: "flex" }}>
                     <div style={{ width: "60%" }}>
                         <Builder 
